@@ -1,0 +1,450 @@
+[
+ {
+  "id": 1,
+  "Name": "Rooftop solar",
+  "Text": "Install 100 square meters of solar panels on the hotel's roof.",
+  "Decision Rating (1-3)": 2,
+  "Feedback": "The solar panels are generating electricity. This year, the purchase of the panels is adding to emissions from purchasing. Customers like to look of them."
+ },
+ {
+  "id": 2,
+  "Name": "LED lighting",
+  "Text": "Replace old lightbulbs with LED lighting.",
+  "Decision Rating (1-3)": 3,
+  "Feedback": "With the LED lights, electricity from lighting is down by 50%."
+ },
+ {
+  "id": 3,
+  "Name": "Electric shuttle vehicles",
+  "Text": "Replace the fleet of 5 cars with electric shuttle buses. Depreciation expense is up.",
+  "Decision Rating (1-3)": 2,
+  "Feedback": "Purchasing the new shuttle buses has increased emissions from purchasing. Petrol consumption is replaced by electricity, with a small impact on annual emissions. Customers like the idea of being driven in a 'green car'."
+ },
+ {
+  "id": 4,
+  "Name": "Electricity generating gym bikes",
+  "Text": "Place bikes in the gym that generate electricity when guests use them.",
+  "Decision Rating (1-3)": 1,
+  "Feedback": "The bikes in the gym are not having much impact"
+ },
+ {
+  "id": 5,
+  "Name": "Upgrade Air Conditioning",
+  "Text": "Replace the existing air conditioning with a state-of-the-art system.",
+  "Decision Rating (1-3)": 3,
+  "Feedback": "The new air conditioners are much more efficient and electricity consumption is down."
+ },
+ {
+  "id": 6,
+  "Name": "Insulate windows",
+  "Text": "Addan insulating layer to all windows.",
+  "Decision Rating (1-3)": 3,
+  "Feedback": "Insulating the windows is helping to reduce energy from heating and airco."
+ },
+ {
+  "id": 7,
+  "Name": "New kitchen equipment",
+  "Text": "Install new kitchen equipment to cut energy consumption.",
+  "Decision Rating (1-3)": 2,
+  "Feedback": "The new kitchen equipment is saving electricity and water."
+ },
+ {
+  "id": 8,
+  "Name": "Smart climate control system",
+  "Text": "Implement climate control to make heating and airconditioning are off in empty rooms.",
+  "Decision Rating (1-3)": 3,
+  "Feedback": "The climate control system is a great and simple way to save energy ."
+ },
+ {
+  "id": 9,
+  "Name": "Remove minibars",
+  "Text": "Remove (and recycle) minibars to save electricity consumption.",
+  "Decision Rating (1-3)": 2,
+  "Feedback": "There is no more revenue from minibars, but some of it has been replaced with revenue in the lobby bar. Staff don't need to spend time refilling the minibars and electricity consumption is down a bit."
+ },
+ {
+  "id": 10,
+  "Name": "Light sensors",
+  "Text": "Add light sensors so lights are off when corridors are empty.",
+  "Decision Rating (1-3)": 2,
+  "Feedback": "The new sensors are helping to cut electricity consumption from lighting."
+ },
+ {
+  "id": 11,
+  "Name": "Revolving doors",
+  "Text": "Replace sliding doors with revolving ones to manage temperature in lobby.",
+  "Decision Rating (1-3)": 2,
+  "Feedback": "The revolving doors are keeping the temperature more constant in the lobby."
+ },
+ {
+  "id": 12,
+  "Name": "Water efficient appliances",
+  "Text": "Change all showerheads and water taps.",
+  "Decision Rating (1-3)": 2,
+  "Feedback": "Water consumption has dropped by over 20,000 liters per day."
+ },
+ {
+  "id": 13,
+  "Name": "Refillabe soap bottles",
+  "Text": "Replace disposable soap with refillable bottles.",
+  "Decision Rating (1-3)": 2,
+  "Feedback": "Customers did not compain about the refillable shampoo bottles. Most hotels have this already."
+ },
+ {
+  "id": 14,
+  "Name": "Organic cotton bed linen",
+  "Text": "Purchase organic sheets when replacing bed linen.",
+  "Decision Rating (1-3)": 2,
+  "Feedback": "Customers like the idea of organic bed linen, but the impact on your Scope 3 emissions is quite small and costs are up a bit."
+ },
+ {
+  "id": 15,
+  "Name": "Low carbon furniture",
+  "Text": "Partner with local low carbon furniture supplier for beds and chairs.",
+  "Decision Rating (1-3)": 3,
+  "Feedback": "The new furniture supplier is helping to reduce Scope 3 emissions, at a small additional cost"
+ },
+ {
+  "id": 16,
+  "Name": "Eco-friendly cleaning materials",
+  "Text": "Use cleaning materials that are chemical free.",
+  "Decision Rating (1-3)": 1,
+  "Feedback": "Switching to chemical free cleaning products has many environmental & health benefits, but it has little impact on emissions."
+ },
+ {
+  "id": 17,
+  "Name": "Expand vegetarian menu",
+  "Text": "Add vegetarian items to the menu and promote them in the hotel's restaurant.",
+  "Decision Rating (1-3)": 3,
+  "Feedback": "Customers like the vegetarian options and the reduction in meat consumption is reducing Scope 3 emissions from food."
+ },
+ {
+  "id": 18,
+  "Name": "Expand organic food menu",
+  "Text": "Add organic items to the menu and promote them in the hotel's restaurant.",
+  "Decision Rating (1-3)": 2,
+  "Feedback": "The organic menu items are popular, but don't have a big impact on emissions."
+ },
+ {
+  "id": 19,
+  "Name": "Low carbon carpets",
+  "Text": "Carpets need replacement and a new,local supplier offers a sustainable option.",
+  "Decision Rating (1-3)": 3,
+  "Feedback": "The new carpets have much lower embodied carbon and Scope 3 emission have gone down."
+ },
+ {
+  "id": 20,
+  "Name": "Eliminate plastic bottles",
+  "Text": "Get rid of plastic bottles and serve filtered tap water in glass bottles or jugs.",
+  "Decision Rating (1-3)": 2,
+  "Feedback": "Getting rid of plastic bottles has made customers happier. There is less waste and a small impact on emissions from purchasing."
+ },
+ {
+  "id": 21,
+  "Name": "Recruit Sustainability Officer",
+  "Text": "Use the services of an inhouse expert to drive sustainability efforts.",
+  "Decision Rating (1-3)": 3,
+  "Feedback": "The Sustainability Officer is driving change. Small improvements are made across the hotel and staff is more aware of the need to reduce emissions."
+ },
+ {
+  "id": 22,
+  "Name": "Food composting",
+  "Text": "Recycle food waste into compost in the hotel's garden.",
+  "Decision Rating (1-3)": 2,
+  "Feedback": "Guests are impressed with the new composting facility and food waste is down."
+ },
+ {
+  "id": 23,
+  "Name": "Recycling bins in rooms",
+  "Text": "Place three bins in every room to segregate waste and recycle.",
+  "Decision Rating (1-3)": 2,
+  "Feedback": "Guests are using the recycling bins, leading to less waste going to landfill."
+ },
+ {
+  "id": 24,
+  "Name": "Go paperless",
+  "Text": "Send bills to customers by email (unless requested).",
+  "Decision Rating (1-3)": 2,
+  "Feedback": "Paper use has gone down to nearly zero. Guests said they prefer to receive their receipts by email."
+ },
+ {
+  "id": 25,
+  "Name": "Free parking for EVs",
+  "Text": "Allow customers with Electric Vehicles to park for free.",
+  "Decision Rating (1-3)": 1,
+  "Feedback": "The hotel's emissions don't include those from the cars of guests, so unfortunately encouraging them to use EVs has no impact on your emissions."
+ },
+ {
+  "id": 26,
+  "Name": "Adjust temperature",
+  "Text": "Increase temperature in summer and decrease it in winter.",
+  "Decision Rating (1-3)": 3,
+  "Feedback": "Changing the temperature in the common spaces is a simple measure with a big impact."
+ },
+ {
+  "id": 27,
+  "Name": "Publish sustainability report",
+  "Text": "Partner with consultants to produce an annual sustainability report.",
+  "Decision Rating (1-3)": 1,
+  "Feedback": "The sustainability report has been well received, but by itself it has no impact on emissions."
+ },
+ {
+  "id": 28,
+  "Name": "Get sustainability rating",
+  "Text": "Obtain industry-wide sustainability rating and publicise the results.",
+  "Decision Rating (1-3)": 1,
+  "Feedback": "Customers appreciate the hotel's sustainability rating, but there is no change in emissions."
+ },
+ {
+  "id": 29,
+  "Name": "Electronics recycling",
+  "Text": "Partner with local company and donate old TVs, fridges and other equipment to them.",
+  "Decision Rating (1-3)": 2,
+  "Feedback": "Donating electronic waste is great for the environment, but the impact on emissions is moderate."
+ },
+ {
+  "id": 30,
+  "Name": "Plant trees",
+  "Text": "Plant 50 trees in the hotels garden to help clean the air and capture carbon.",
+  "Decision Rating (1-3)": 2,
+  "Feedback": "Guests like the added greenery, but the carbon they absorb hardly registers. When fully grown, 50 trees will absorb only around 1 tonne per year."
+ },
+ {
+  "id": 31,
+  "Name": "Double parking charges",
+  "Text": "Encourage public transport by doubling parking charges for guests.",
+  "Decision Rating (1-3)": 1,
+  "Feedback": "Encouraging public transport is good, but does not impact the hotel's Scope 3 emissions (since these are not included in the baseline measurement)."
+ },
+ {
+  "id": 32,
+  "Name": "Renewable energy from grid",
+  "Text": "Purchase 1 million kWh renewable energy from the grid, at a 10% price premium.",
+  "Decision Rating (1-3)": 3,
+  "Feedback": "Purchasing renewable energy has a big impact on emissions, even though it comes at a premium."
+ },
+ {
+  "id": 33,
+  "Name": "Fix water leaks",
+  "Text": "Commission plumbing experts to identify and fix water leaks throughout the hotel.",
+  "Decision Rating (1-3)": 2,
+  "Feedback": "Water leaks are fixed and water consumption has gone down by 1 million liters per year. The impact on emissions is modest."
+ },
+ {
+  "id": 34,
+  "Name": "Green roof",
+  "Text": "Planting grass and vegetation on the roof to absorb carbon and provide insulation.",
+  "Decision Rating (1-3)": 2,
+  "Feedback": "The green roof is improving insulation and air quality."
+ },
+ {
+  "id": 35,
+  "Name": "Add plants in lobby",
+  "Text": "Adding plants in the lobby will freshen the air and absorb some carbon.",
+  "Decision Rating (1-3)": 1,
+  "Feedback": "The plants look nice in the lobby and air quality has improved, but there is very little absorption of carbon."
+ },
+ {
+  "id": 36,
+  "Name": "Management Performance Indicators",
+  "Text": "Incorporate emission reduction targets in performance measures for all managers.",
+  "Decision Rating (1-3)": 3,
+  "Feedback": "The new performance measures are making managers focus much more on energy efficiency and emissions reduction. "
+ },
+ {
+  "id": 37,
+  "Name": "Local purchasing",
+  "Text": "Ensure at least half of purchasing budget is spent with local suppliers.",
+  "Decision Rating (1-3)": 2,
+  "Feedback": "Using local suppliers is reducing Scope 3 emissions from transport, but more can be done to select low carbon suppliers."
+ },
+ {
+  "id": 38,
+  "Name": "Make bicycles available",
+  "Text": "Allow guests to use bycicles free of charge to avoid use of taxis and cars.",
+  "Decision Rating (1-3)": 1,
+  "Feedback": "Guests like the bikes, but they don't help the hotel to reduce emissions."
+ },
+ {
+  "id": 39,
+  "Name": "Upgrade website",
+  "Text": "Communicate about sustainability achievements on hotel website",
+  "Decision Rating (1-3)": 1,
+  "Feedback": "The new website is helping to attract a few more sustainability conscious customers, but is impacting customer behavior much."
+ },
+ {
+  "id": 40,
+  "Name": "Outsource laundry",
+  "Text": "Partner with sustainable laundry company and donate existing washing machines to recycling center.",
+  "Decision Rating (1-3)": 3,
+  "Feedback": "Outsourcing the laundy has increased Scope 3 emissions, but reduced the hotel's electricty consumption and leading to a reduction in emissions overall."
+ },
+ {
+  "id": 41,
+  "Name": "Energy efficiency training",
+  "Text": "Train all staff on the importance of energy saving and emissions reduction.",
+  "Decision Rating (1-3)": 3,
+  "Feedback": "Training staff has had a big impact on behaviour, reducing consumption of energy and water, and reducing waste."
+ },
+ {
+  "id": 42,
+  "Name": "Train purchasing team",
+  "Text": "Train purchasing team on sustainable procurement.",
+  "Decision Rating (1-3)": 3,
+  "Feedback": "Training the purchasing team has helped to change procuement practices and Scope 3 emissions"
+ },
+ {
+  "id": 43,
+  "Name": "Guest communication",
+  "Text": "Place signs with energy and water saving tips in every room.",
+  "Decision Rating (1-3)": 3,
+  "Feedback": "Communicating with guests has encouraged them to save energy and water."
+ },
+ {
+  "id": 44,
+  "Name": "Offsets",
+  "Text": "Buy offset certificates to finance emissions avoidance projects outside the hotel.",
+  "Decision Rating (1-3)": 1,
+  "Feedback": "Even if the offsets are credible and certified, according to the Science Based Targets Initiative they can't be counted as an emissions reduction."
+ },
+ {
+  "id": 45,
+  "Name": "Guest rewards",
+  "Text": "Give guests loyalty points based on their energy and water consumption.",
+  "Decision Rating (1-3)": 3,
+  "Feedback": "The loyalty points are incrasing the sustainability awareness of guests and is impacting behavior."
+ },
+ {
+  "id": 46,
+  "Name": "Backup microgrid",
+  "Text": "Install a solar powered backup microgrid to supply electricity in case of a power outage.",
+  "Decision Rating (1-3)": 1,
+  "Feedback": "The backup microgrid is making the hotel more resilient, but is not directly reducing emissions."
+ },
+ {
+  "id": 47,
+  "Name": "Vegetable garden",
+  "Text": "Grow own vegetables in greenhouse in hotel garden and serve them in he restaurants.",
+  "Decision Rating (1-3)": 2,
+  "Feedback": "Guests love the greens from the garden. Scope 3 emissions are down slightly."
+ },
+ {
+  "id": 48,
+  "Name": "Dry car wash",
+  "Text": "Buy materials that enable the hotel's cars to be washed without water.",
+  "Decision Rating (1-3)": 1,
+  "Feedback": "Water consumption from car washes is down, but the overall impact is small."
+ },
+ {
+  "id": 49,
+  "Name": "Work from home",
+  "Text": "Allow admin staff to work from home 3 days a week.",
+  "Decision Rating (1-3)": 1,
+  "Feedback": "Electricity consumption in the office is down slightly, but since staff travel has not been counted in Scope 3 there is no other impact"
+ },
+ {
+  "id": 50,
+  "Name": "Internal carbon pricing",
+  "Text": "Add internal price of carbon ($50 per kg) to budgets for all departments",
+  "Decision Rating (1-3)": 3,
+  "Feedback": "The internal carbon price is making all departments more aware of the cost of carbon and is resulting in emission reductions across the board."
+ },
+ null,
+ {
+  "id": 51,
+  "Name": "Drones for luggage transport",
+  "Text": "Use drones to take luggage of guests to their rooms.",
+  "Decision Rating (1-3)": 1,
+  "Feedback": "The drones are resulting in a slight reduction in staff costs, but there is no impact on emissions."
+ },
+ {
+  "id": 52,
+  "Name": "Chatbots",
+  "Text": "Let all hotel phones be anwered by chatbots and only refer to humans if needed.",
+  "Decision Rating (1-3)": 1,
+  "Feedback": "The chatbots are now working well, but they are not leading to an emissions reduction."
+ },
+ {
+  "id": 53,
+  "Name": "Recylced linen",
+  "Text": "Sheets and towels from recylced cotton have now become cost competitive.",
+  "Decision Rating (1-3)": 2,
+  "Feedback": "The recycled linen is helping to cut emissions from purchasing, at no additional cost."
+ },
+ {
+  "id": 54,
+  "Name": "Carbon tracker",
+  "Text": "Provide guests with real-time emissions data and personalized sustainability recommendations throughout their stay to their smart device.",
+  "Decision Rating (1-3)": 3,
+  "Feedback": "Guests appreciate the carbon trackers and are using the tips to reduce emissions."
+ },
+ {
+  "id": 55,
+  "Name": "Cultivated meat",
+  "Text": "Replace all meat and fish products in restaurants with plant based and cultivated meat alternatives.",
+  "Decision Rating (1-3)": 3
+ },
+ {
+  "id": 56,
+  "Name": "Carbon capture for guests",
+  "Text": "Install a new carbon capture device on the roof.",
+  "Decision Rating (1-3)": 3
+ },
+ {
+  "id": 57,
+  "Name": "Ultra efficient lights",
+  "Text": "Replace lighting with very low energy consumption lightbulbs",
+  "Decision Rating (1-3)": 3
+ },
+ {
+  "id": 58,
+  "Name": "Solar powered vertical farm",
+  "Text": "Produce all fruits and vegetables for the restaurants in solar powered vertical farm in hotel yard. Show new farm to guests for educational and marketing purposes.",
+  "Decision Rating (1-3)": 2
+ },
+ {
+  "id": 59,
+  "Name": "AI building management system",
+  "Text": "AI powered building management system to reduce energy an water consumption.",
+  "Decision Rating (1-3)": 2
+ },
+ {
+  "id": 60,
+  "Name": "AI energy audit",
+  "Text": "Use AI for automated energy audit and implement suggestions.",
+  "Decision Rating (1-3)": 2
+ },
+ {
+  "id": 61,
+  "Name": "Robots in restaurant",
+  "Text": "Replace staff in restuarants with robots to prepare and serve food.",
+  "Decision Rating (1-3)": 1
+ },
+ {
+  "id": 62,
+  "Name": "Self driving shuttle",
+  "Text": "Level 4 autonomous driving is now available for the otel shuttles",
+  "Decision Rating (1-3)": 1,
+  "Feedback": "Wth Level 4 autonomy, a human still needs to be behind the wheel in case of emergencies. In any case, there has been no change in emissions."
+ },
+ {
+  "id": 63,
+  "Name": "AI Procurement system",
+  "Text": "Use AI to identify and select sustainable suppliers",
+  "Decision Rating (1-3)": 2
+ },
+ {
+  "id": 64,
+  "Name": "3D Printing of souvenirs",
+  "Text": "Personalized 3D printed souvenirs in gift shop",
+  "Decision Rating (1-3)": 2,
+  "Feedback": "The 3D printing is leading to a small increase in energy consumption and a minor reduction in emissions from purchasing."
+ },
+ {
+  "id": 65,
+  "Name": "Carbon pricing for guests",
+  "Text": "Reduce base room rates and make guests pay $50 per kg of carbon emissions during their stay. The new system is designed so it does not lead to additional costs or revenues.",
+  "Decision Rating (1-3)": 3,
+  "Feedback": "The carbon price for guests is making guests reduce their energy consumption, although some complain that they feel they are now paying extra for electricity."
+ }
+]
