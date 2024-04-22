@@ -39,17 +39,22 @@ class LevelSelectionScreen extends StatelessWidget {
               child: ListView(
                 children: [
                   ListTile(
-                    onTap: () => GoRouter.of(context).go('/welcome'),
+                    onTap: () {
+                      if (settings.currentYear.value < 2) {
+                        GoRouter.of(context).go('/welcome');
+                      }
+                    },
                     title: Text(
                       'Welcome View',
                       style: TextStyle(
                         fontFamily: "Poppins-Regular",
                         fontSize: 24,
-                        color: Color(0xFF0C2D57),
+                        color: Color(0xFF0C2D57).withOpacity(settings.currentYear.value < 2 ? 1.0 : 0.5),
                         fontWeight: FontWeight.bold,
                       ),
                     ),
                   ),
+
                   ListTile(
                     onTap: settings.nextLocation.value ? () => GoRouter.of(context).go('/decisions') : null,
                     title: Text(

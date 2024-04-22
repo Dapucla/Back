@@ -49,7 +49,6 @@ class _WelcomeViewState extends State<WelcomeView> with SingleTickerProviderStat
                   );
                 },
               ),
-              const SizedBox(height: 20),
               ValueListenableBuilder<String>(
                 valueListenable: settings.cityName,
                 // Assuming nextLocation is a ValueListenable<bool>
@@ -57,6 +56,16 @@ class _WelcomeViewState extends State<WelcomeView> with SingleTickerProviderStat
                   return ListTile(
                     title: Text(
                         cityName), // Conditional text based on boolean value
+                  );
+                },
+              ),
+              ValueListenableBuilder<int>(
+                valueListenable: settings.currentYear,
+                // Assuming nextLocation is a ValueListenable<bool>
+                builder: (context, currentYear, child) {
+                  return ListTile(
+                    title: Text(
+                        '$currentYear'), // Conditional text based on boolean value
                   );
                 },
               ),
@@ -132,8 +141,8 @@ class _WelcomeViewState extends State<WelcomeView> with SingleTickerProviderStat
               const SizedBox(height: 30),
               MyButton(
                 onPressed: () {
-                  settings
-                      .toggleNextLocation(); // Assuming toggleNextLocation() is a method in your settings class
+                  settings.toggleNextLocation();
+                  settings.setCurrentYear();
                   GoRouter.of(context).go(
                       '/play'); // Proceed with navigation after toggling
                 },
@@ -196,8 +205,7 @@ class _WelcomeViewState extends State<WelcomeView> with SingleTickerProviderStat
                         .setCityName("");
                   } else {
                     selectedLocation = title; // Select new location
-                    Provider.of<SettingsController>(context, listen: false)
-                        .setCityName(title);
+                    Provider.of<SettingsController>(context, listen: false).setCityName(title);
                   }
                 });
               },

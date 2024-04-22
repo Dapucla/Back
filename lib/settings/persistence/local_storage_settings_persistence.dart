@@ -49,6 +49,12 @@ class LocalStorageSettingsPersistence extends SettingsPersistence {
   }
 
   @override
+  Future<int> getCurrentYear() async {
+    final prefs = await instanceFuture;
+    return prefs.getInt('currentYear') ?? 1;
+  }
+
+  @override
   Future<void> saveAudioOn(bool value) async {
     final prefs = await instanceFuture;
     await prefs.setBool('audioOn', value);
@@ -82,5 +88,11 @@ class LocalStorageSettingsPersistence extends SettingsPersistence {
   Future<void> saveNextLocation(bool value) async {
     final prefs = await instanceFuture;
     await prefs.setBool('nextLocation', value);
+  }
+
+  @override
+  Future<void> saveCurrentYear(int value) async {
+    final prefs = await instanceFuture;
+    await prefs.setInt('currentYear', value);
   }
 }

@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
 import 'EmissionAnalysisView.dart'; // Import EmissionAnalysisView
 import 'FinancialsView.dart'; // Import FinancialsView
-// import 'graph.dart';
-// import 'table.dart';
+import 'GraphView.dart';
 import 'package:go_router/go_router.dart';
 import '../../style/my_button.dart';
-// import 'package:charts_flutter/flutter.dart' as charts;
-// import 'FeedbackView.dart';
+
 
 class DashboardView extends StatelessWidget {
   const DashboardView({super.key});
@@ -129,6 +127,16 @@ class DashboardView extends StatelessWidget {
                               SizedBox(height: 30),
                               // FeedbackView(),
                               // GraphView(),
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  // Existing widgets...
+                                  SizedBox(height: 20),
+                                  Text('Overall Performance Graph:', style: TextStyle(fontSize: 20)),
+                                  SizedBox(height: 400, child: PerformanceGraph.withSampleData())
+                                  // More widgets or code...
+                                ],
+                              ),
                               Center( // Wrap the button in a Center widget
                                 child: MyButton(
                                   onPressed: () {

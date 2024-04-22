@@ -19,6 +19,8 @@ class MemoryOnlySettingsPersistence implements SettingsPersistence {
 
   String cityName = 'Stavropol';
 
+  int currentYear = 1;
+
   @override
   Future<bool> getAudioOn({required bool defaultValue}) async => audioOn;
 
@@ -38,6 +40,10 @@ class MemoryOnlySettingsPersistence implements SettingsPersistence {
   Future<bool> getNextLocation({required bool defaultValue}) async => nextLocation;
 
   @override
+  Future<int> getCurrentYear() async => currentYear;
+
+
+  @override
   Future<void> saveAudioOn(bool value) async => audioOn = value;
 
   @override
@@ -54,4 +60,7 @@ class MemoryOnlySettingsPersistence implements SettingsPersistence {
 
   @override
   Future<void> saveNextLocation(bool value) async => nextLocation = value;
+
+  @override
+  Future<void> saveCurrentYear(int value) async => currentYear = value;
 }

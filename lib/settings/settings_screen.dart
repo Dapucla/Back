@@ -64,7 +64,9 @@ class SettingsScreen extends StatelessWidget {
               const Icon(Icons.delete),
               onSelected: () {
                 context.read<PlayerProgress>().reset();
-
+                settings.resetNextLocation();
+                settings.resetCurrentYear();
+                settings.resetCityName();
                 final messenger = ScaffoldMessenger.of(context);
                 messenger.showSnackBar(
                   const SnackBar(

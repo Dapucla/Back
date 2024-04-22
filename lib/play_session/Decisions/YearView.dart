@@ -1,8 +1,11 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import '../../style/my_button.dart';
 import 'package:go_router/go_router.dart';
+import 'package:provider/provider.dart';
+
+import '../../style/my_button.dart';
+import '../../settings/settings.dart';
 
 class YearView extends StatefulWidget {
   @override
@@ -44,6 +47,7 @@ class _YearViewState extends State<YearView> {
 
   @override
   Widget build(BuildContext context) {
+    final settings = context.watch<SettingsController>();
     String selectedIdsText = _selectedInitiativeIds.isNotEmpty ? " (Selected IDs: ${_selectedInitiativeIds.join(', ')})" : "";
     return SingleChildScrollView(
       child: Column(
@@ -51,14 +55,21 @@ class _YearViewState extends State<YearView> {
         children: [
           Padding(
             padding: const EdgeInsets.all(10.0),
-            child: Text(
-              "Make decisions for year $currentYear:$selectedIdsText",
-              style: TextStyle(
-                fontFamily: "Poppins-SemiBold",
-                fontSize: 20,
-                fontWeight: FontWeight.w600,
-                color: Color(0xFF0C2D57),
-              ),
+            child: ValueListenableBuilder<int>(
+              valueListenable: settings.currentYear,
+              // Assuming nextLocation is a ValueListenable<bool>
+              builder: (context, currentYear, child) {
+                return ListTile(
+                  title: Text(
+                      'Make decisions for year $currentYear:',
+                    style: TextStyle(
+                    fontFamily: 'Poppins-Regular',
+                    fontSize: 20,
+                    fontWeight: FontWeight.w600,
+                    color: Color(0xFF0C2D57),
+                  ),), // Conditional text based on boolean value
+                );
+              },
             ),
           ),
           ..._initiatives.map((initiative) => _buildInitiativeCard(initiative)).toList(),

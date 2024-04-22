@@ -1,26 +1,72 @@
-import 'dart:convert';
+// Copyright 2022, the Flutter project authors. Please see the AUTHORS file
+// for details. All rights reserved. Use of this source code is governed by a
+// BSD-style license that can be found in the LICENSE file.
+
 import 'package:shared_preferences/shared_preferences.dart';
-import 'initiatives.dart'; // Adjust the import path based on your project structure
 
-class LocalStorageInitiativesPersistence {
-  // Key for storing initiatives data
-  static const String _storageKey = 'initiatives';
+import 'initiatives_persistence.dart';
 
-  // Load initiatives from shared preferences
-  Future<List<Initiative>> loadInitiatives() async {
-    SharedPreferences prefs = await SharedPreferences.getInstance();
-    String? initiativesJson = prefs.getString(_storageKey);
-    if (initiativesJson != null) {
-      List<dynamic> decodedJson = jsonDecode(initiativesJson) as List<dynamic>;
-      return decodedJson.map((json) => Initiative.fromJson(json as Map<String, dynamic>)).toList();
-    }
-    return [];
+class LocalStorageInitiativesPersistence extends InitiativesPersistence {
+
+  final Future<SharedPreferences> instanceFuture = SharedPreferences.getInstance();
+
+  @override
+  Future<String> getInitiativeDecisionRating() async {
+    final prefs = await instanceFuture;
+    return prefs.getString('decisionRating') ?? '';
   }
 
-  // Save initiatives to shared preferences
-  Future<bool> saveInitiatives(List<Initiative> initiatives) async {
-    SharedPreferences prefs = await SharedPreferences.getInstance();
-    String initiativesJson = jsonEncode(initiatives.map((i) => i.toJson()).toList());
-    return prefs.setString(_storageKey, initiativesJson);
+  @override
+  Future<String> getInitiativeFeedback() async {
+    final prefs = await instanceFuture;
+    return prefs.getString('feedback') ?? '';
+  }
+
+  @override
+  Future<String> getInitiativeID() async {
+    final prefs = await instanceFuture;
+    return prefs.getString('initiativeID') ?? '';
+  }
+
+  @override
+  Future<String> getInitiativeName() async {
+    final prefs = await instanceFuture;
+    return prefs.getString('initiativeName') ?? '';
+  }
+
+  @override
+  Future<String> getInitiativeText() async{
+    final prefs = await instanceFuture;
+    return prefs.getString('initiativeText') ?? '';
+  }
+
+  @override
+  Future<void> saveInitiativeDecisionRating(String value) async {
+    final prefs = await instanceFuture;
+    await prefs.setString('decisionsRating', value);
+  }
+
+  @override
+  Future<void> saveInitiativeFeedback(String value) async {
+    final prefs = await instanceFuture;
+    await prefs.setString('feedback', value);
+  }
+
+  @override
+  Future<void> saveInitiativeID(String value) async{
+    final prefs = await instanceFuture;
+    await prefs.setString('initiativeID', value);
+  }
+
+  @override
+  Future<void> saveInitiativeName(String value) async {
+    final prefs = await instanceFuture;
+    await prefs.setString('initiativeName', value);
+  }
+
+  @override
+  Future<void> saveInitiativeText(String value) async {
+    final prefs = await instanceFuture;
+    await prefs.setString('initiativeText', value);
   }
 }

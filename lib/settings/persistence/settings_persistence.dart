@@ -19,6 +19,10 @@ abstract class SettingsPersistence {
 
   Future<bool> getNextLocation({required bool defaultValue});
 
+  Future<int> getCurrentYear();
+
+
+
   Future<void> saveAudioOn(bool value);
 
   Future<void> saveMusicOn(bool value);
@@ -30,4 +34,6 @@ abstract class SettingsPersistence {
   Future<void> saveSoundsOn(bool value);
 
   Future<void> saveNextLocation(bool value);
+
+  Future<void> saveCurrentYear(int value);
 }

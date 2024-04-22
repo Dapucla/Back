@@ -35,7 +35,7 @@ class _CustomNameDialogState extends State<CustomNameDialog> {
         curve: Curves.easeOutCubic,
       ),
       child: SimpleDialog(
-        title: const Text('Change name'),
+        title: const Text('Hotel name:'),
         children: [
           TextField(
             controller: _controller,
@@ -45,6 +45,7 @@ class _CustomNameDialogState extends State<CustomNameDialog> {
             textAlign: TextAlign.center,
             textCapitalization: TextCapitalization.words,
             textInputAction: TextInputAction.done,
+            cursorColor: Color(0xFF0C2D57),
             onChanged: (value) {
               context.read<SettingsController>().setPlayerName(value);
             },

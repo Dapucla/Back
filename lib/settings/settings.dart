@@ -41,6 +41,9 @@ class SettingsController {
   /// Whether or not the music is on.
   ValueNotifier<bool> nextLocation = ValueNotifier(false);
 
+  /// Whether or not the music is on.
+  ValueNotifier<int> currentYear = ValueNotifier(1);
+
   /// Creates a new instance of [SettingsController] backed by [store].
   ///
   /// By default, settings are persisted using [LocalStorageSettingsPersistence]
@@ -59,6 +62,11 @@ class SettingsController {
   void setCityName(String name) {
     cityName.value = name;
     _store.saveCityName(cityName.value);
+  }
+
+  void setCurrentYear() {
+    currentYear.value = currentYear.value + 1; // Correctly increment and update the value
+    _store.saveCurrentYear(currentYear.value);
   }
 
   void toggleAudioOn() {
@@ -81,6 +89,20 @@ class SettingsController {
     _store.saveNextLocation(nextLocation.value);
   }
 
+  void resetNextLocation() {
+    nextLocation.value = false;
+    _store.saveNextLocation(nextLocation.value);
+  }
+
+  void resetCurrentYear() {
+    currentYear.value = 1; // Correctly increment and update the value
+    _store.saveCurrentYear(currentYear.value);
+  }
+
+  void resetCityName() {
+    cityName.value = "";
+    _store.saveCityName(cityName.value);
+  }
   /// Asynchronously loads values from the injected persistence store.
   Future<void> _loadStateFromPersistence() async {
     final loadedValues = await Future.wait([
@@ -101,6 +123,8 @@ class SettingsController {
           .then((value) => musicOn.value = value),
       _store.getPlayerName().then((value) => playerName.value = value),
       _store.getCityName().then((value) => cityName.value = value),
+
+      _store.getCurrentYear().then((value) => currentYear.value = value),
 
       _store
           .getNextLocation(defaultValue: false)
